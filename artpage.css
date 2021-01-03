@@ -1,0 +1,237 @@
+.item-a {
+    grid-area: navbar;
+    border-bottom: .25vh solid rgb(12, 73, 134);
+}
+.tabs {
+    grid-area: sectiona;
+    display: flex;
+    margin-top: 3vmin;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    overflow: hidden;
+}
+.tabContent{
+    grid-area: sectionb;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: rgba(103, 179, 255, 0.493);
+    color:rgb(12, 73, 134);
+    display: none;
+    width: 80%;
+    border: thin solid dodgerblue;
+    border-bottom: 0;
+}
+
+.item-c {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-top: 2vmin;
+  grid-area: sectionc;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  background-color: rgba(103, 179, 255, 0.493);
+  border: thin solid dodgerblue;
+  border-top: 0;
+  position: relative;
+  z-index: -999;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  z-index: 999;
+  margin-top: 50vmax;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  width: 80%;
+  position: absolute;
+}
+.container {
+    margin:0;
+    display: grid;
+    grid-template-rows: 10% 10% 70% 7%;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 100vh;  
+    grid-template-areas: 
+      "navbar"
+      "sectiona"
+      "sectionb"
+      "sectionc";
+  }
+
+ul {
+    padding-left: 1px;
+  }
+
+  ul a {
+    color: rgb(12, 73, 134);
+    /* color: rgb(255, 255, 255); */
+    font-size: 3vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-right: 1vmin;
+  
+}  a:hover {
+    background-position: 0% 0%;
+    background-color: rgb(12, 73, 134);
+    background-image: -webkit-linear-gradient(left,rgb(0, 162, 255) 20%, rgb(197, 234, 252) 20%, rgb(0, 162, 255) 40%,  rgb(0, 119, 255) 20%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    animation: movegradient 1.3s infinite ease-in;
+  }
+
+  @keyframes movegradient {
+    0% {
+      background-position: 0% 0%;
+    }
+    25% {
+      background-position: 50% 0%;
+    }
+    50% {
+      background-position: 100% 0%;
+    }
+    75% {
+      background-position: 150% 0%;
+    }
+    100% {
+      background-position: 200% 0%;
+    }
+  }
+
+.tabs button{
+    padding: 2vmin;
+    border: thin;
+    background-color: rgb(30, 154, 255);
+    color: white;
+    outline: none;
+    font-size: 2.5vmin;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabs button:hover {
+    background-color: rgb(69, 160, 252);
+}
+  
+  /* Create an active/current tablink class */
+.tabs button.current {
+    background-color: rgb(0, 132, 255);
+}
+  
+  /* Style the tab content */
+.tabContent {
+    display: none;
+}
+
+/* CAROUSEL CSS */
+/* .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+} */
+
+/* Next & previous buttons */
+.prev, .next {
+  color: rgb(0, 162, 255);
+  font-size: 5vmin;
+  padding: 2vmin;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1.5vmin;
+  width: 1.5vmin;
+  margin: 0 .5vmin;
+  background-color: rgb(228, 245, 253);
+  border-radius: 50%;
+  display: inline;
+  margin-top: 3%;
+}
+
+.dot:hover {
+  background-color: rgb(255, 255, 255);
+}
+.active {
+  background-image: rgb(197, 234, 252);
+}
+
+img {
+  object-fit: contain;
+  overflow: hidden;
+  height: 88%;
+  width: 100%;
+  position: relative;
+  display: inline;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  margin: 0;
+
+}
+
+/* Fading animation */
+.in {
+  -webkit-animation-duration: 1s;
+  animation-name: in;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes in {
+  0% {
+      transform: translateX(-5vmin);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes in {
+  0% {
+    transform: translateX(-5vmin);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.text {
+  margin-top: 2%;
+  text-align: center;
+  background-color:rgb(255, 255, 255, .8);
+  color: rgb(12, 73, 134);
+  margin-left: 10vmin;
+  margin-right: 10vmin;
+  padding-bottom: .3vmin;
+  padding-top: .3vmin;
+}
+
+p {
+  font-size: 1.6vmin;
+  line-height: .3vmin;
+}
+
+.title {
+  font-size: 2.2vmin;
+}
+
+.mini {
+  font-size: 1.5vmin;
+}
+.index {
+  float: right;
+  margin-top: 6vmin;
+  margin-right: 1vmin;
+}
+
+.btns {
+  display: none;
+}
