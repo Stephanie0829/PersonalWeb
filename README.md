@@ -14,4 +14,4 @@
   
  All other images and icons self created through uploading a png from digital art created through ibisartpaint x.
  
- **Notes for usage:** All art created by Stephanie Wei must be given credit and asked for permission before posting to other sources.
+ **Notes for usage:** All art created must be asked for permission before posting to other sources.
