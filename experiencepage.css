@@ -27,6 +27,16 @@
     }
   }
 
+@media screen and (max-width: 794px) {
+    .item-b {
+    padding-left: 2%;
+    padding-right: 4%;
+    }
+    div {
+        width: 750px;
+        overflow: auto;
+    }
+  } 
 
 .container {
     margin:0;
